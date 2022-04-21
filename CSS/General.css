@@ -9,7 +9,7 @@ body{
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #000000 center top url(/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
+        background: #000000 center top url(/Website/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
         color: gainsboro;
     }
 }
