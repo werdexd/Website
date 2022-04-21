@@ -1,0 +1,45 @@
+*{text-rendering: optimizeSpeed;image-rendering: optimizeQuality;}
+body{
+    margin: auto;
+    width: 90%;
+    padding: 2vh;
+    font-family:  Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #000000 center top url(/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
+        color: gainsboro;
+    }
+}
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.Text {
+    text-align: center;
+    font-size: 2vh;
+}
+
+
+.Title{
+    font-size: 6vh;
+    text-align: center;
+}
+.Links{
+    font-size: 2vh;
+    margin-top: 25vh;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    flex:2312312;
+}
+dd{margin-top: 0.5em ;margin-bottom: 0.5em;}
+a:link {color:hotpink;}
+a:visited{color:hotpink;}
+a:hover {border-bottom: 1px solid red;}
+a:active{color: red;}
