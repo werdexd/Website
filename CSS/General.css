@@ -9,7 +9,7 @@ body{
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #000000 center top url(/Website/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
+        background: #000000 center top url(/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
         color: gainsboro;
     }
 }
@@ -43,3 +43,9 @@ a:link {color:hotpink;}
 a:visited{color:hotpink;}
 a:hover {border-bottom: 1px solid red;}
 a:active{color: red;}
+
+#user{
+    resize: none;
+    width: 500px;
+    
+}
