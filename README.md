@@ -8,4 +8,6 @@
 > * Quick online search with Google
 > * Basic information about me
 
+I tried to protect the main branch. Really hope it works.
+
 __This Website was made by a begginer__

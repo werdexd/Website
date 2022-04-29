@@ -39,8 +39,7 @@ body{
     flex:2312312;
 }
 dd{margin-top: 0.5em ;margin-bottom: 0.5em;}
-a:link {color:hotpink;}
-a:visited{color:hotpink;}
+a:link, a:visited{color:hotpink;}
 a:hover {border-bottom: 1px solid red;}
 a:active{color: red;}
 
@@ -48,4 +47,11 @@ a:active{color: red;}
     resize: none;
     width: 500px;
     
+}
+
+.abcentre{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
