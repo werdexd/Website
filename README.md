@@ -11,4 +11,6 @@
 
 I tried to protect the main branch. Really hope it works.
 
+You should also be able to find the page: [Here](https://werdexd.github.io/Website/)
+
 __This Website was made by a begginer__
