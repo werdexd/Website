@@ -2,6 +2,7 @@
 
 ## You can find the page: [Here](https://werdexd.github.io/Website/)
 
+[![pages-build-deployment](https://github.com/werdexd/Website/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/werdexd/Website/actions/workflows/pages/pages-build-deployment)
 ### Overview of the website (in work)
 
  

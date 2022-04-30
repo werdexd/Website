@@ -5,9 +5,10 @@ body{
     padding: 2vh;
     font-family:  Arial, Helvetica, sans-serif;
     justify-content: center;
+    font-size: 2vh;
 }
 /* Dark mode */
-@media (prefers-color-s cheme: dark) {
+@media (prefers-color-scheme: dark) {
     body {
         background: #000000 center top url(/Website/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
         color: gainsboro;
@@ -36,10 +37,10 @@ body{
     margin-top: 13vh;
     display: flex;
     flex-flow: wrap column;
-    justify-content: space-between;
-    flex:2312312;
+    justify-content:space-around;
+    flex:2;
 }
-dd{margin-top: 0.5em ;margin-bottom: 0.5em;}
+dd, dt{margin-top: 0.7em;}
 a:link, a:visited{color:hotpink;}
 a:hover {border-bottom: 1px solid red;}
 a:active{color: red;}
