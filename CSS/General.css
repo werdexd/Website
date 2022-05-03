@@ -1,59 +1,72 @@
-*{text-rendering: optimizeSpeed;image-rendering: optimizeQuality;}
-body{
-    margin: auto;
-    width: 90%;
-    padding: 2vh;
-    font-family:  Arial, Helvetica, sans-serif;
-    justify-content: center;
-    font-size: 2vh;
+* {
+  text-rendering: optimizeSpeed;
+  image-rendering: optimizeQuality;
+}
+body {
+  margin: auto;
+  width: 90%;
+  padding: 2vh;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: center;
+  font-size: 2vh;
 }
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body {
-        background: #000000 center top url(/Website/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat local;
-        color: gainsboro;
-    }
+  body {
+    background: #000000 center top
+      url(/Website/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat
+      local;
+    color: gainsboro;
+  }
 }
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    body {
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 213, 184);
-    }
+  body {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 213, 184);
+  }
 }
 
 .Text {
-    text-align: center;
-    font-size: 2vh;
+  text-align: center;
+  font-size: 2vh;
 }
 
-
-.Title{
-    font-size: 6vh;
-    text-align: center;
+.Title {
+  font-size: 6vh;
+  text-align: center;
 }
-.Links{
-    font-size: 2vh;
-    margin-top: 13vh;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content:space-around;
-    flex:2;
+.Links {
+  font-size: 2vh;
+  margin-top: 13vh;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-around;
+  flex: 2;
 }
-dd, dt{margin-top: 0.7em;}
-a:link, a:visited{color:hotpink;}
-a:hover {border-bottom: 1px solid red;}
-a:active{color: red;}
-
-#user{
-    resize: none;
-    width: 500px;
-    
+dd,
+dt {
+  margin-top: 0.7em;
+}
+a:link,
+a:visited {
+  color: hotpink;
+}
+a:hover {
+  border-bottom: 1px solid red;
+}
+a:active {
+  color: red;
 }
 
-.abcentre{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+#user {
+  resize: none;
+  width: 500px;
+}
+
+.abcentre {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

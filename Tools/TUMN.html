@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Time until midnight</title>
-    <link rel="stylesheet" href="/Website/CSS/General.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/Website/CSS/General.css" />
+  </head>
+  <body>
     <a class="Link_home" href="/Website/">Go home</a>
     <div class="abcentre" id="container">
-      <h1 id="countdown">Loading...<br><br>(if this stays longer than a second it means that you have disabled javascript)</h1>
+      <h1 id="countdown">
+        Loading...<br /><br />(if this stays longer than a second it means that
+        you have disabled javascript)
+      </h1>
     </div>
-<script>
-// Date we want to countdown to
-let targetDate = new Date()
-targetDate.setHours(24, 0, 0, 0)
-let targetTime = targetDate.getTime()
-// Create a timer that updates every second
-let timer = setInterval(function() {
-  var now = new Date().getTime()
-  let distance = targetTime - now;
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000)
-  // Update the element with id="countdown"
-  let e = document.getElementById("countdown")
-  e.innerHTML = ""
-    + hours + "h "
-    + minutes + "m " + seconds + "s "
-    + " to midnight"
-  if (distance < 0) {
-    clearInterval(timer)
-  }
-}, 1000)
-</script>
-</body>
+    <script>
+      // Date we want to countdown to
+      let targetDate = new Date();
+      targetDate.setHours(24, 0, 0, 0);
+      let targetTime = targetDate.getTime();
+      // Create a timer that updates every second
+      let timer = setInterval(function () {
+        var now = new Date().getTime();
+        let distance = targetTime - now;
+        let hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Update the element with id="countdown"
+        let e = document.getElementById("countdown");
+        e.innerHTML =
+          "" + hours + "h " + minutes + "m " + seconds + "s " + " to midnight";
+        if (distance < 0) {
+          clearInterval(timer);
+        }
+      }, 1000);
+    </script>
+  </body>
 </html>
