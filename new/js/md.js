@@ -1,4 +1,4 @@
-const mdfile = "/website/README.md";
+const mdfile = "/Website/README.md";
 
 async function Fileloader(url, type) {
 	const response = await fetch(url);
