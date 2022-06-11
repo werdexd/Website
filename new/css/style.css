@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeSpeed;
+  image-rendering: optimizeQuality;
+}
+
+/* Set height of body and the document to 100% */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #000000 center top
+    url(/Website/Assets/Images/Website/Backgrounds/magic_circle.gif) no-repeat
+    local;
+  color: gainsboro;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: gainsboro;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 1em;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  display: none;
+  padding: 7vh 2vw;
+  height: 100%;
+  font-size: 1.3em;
+}
+h1 {
+  font-size: 6vh;
+  text-align: center;
+}
+dd,
+dt {
+  margin-top: 0.7em;
+}
+a:link,
+a:visited {
+  color: hotpink;
+}
+a:hover {
+  border-bottom: 1px solid red;
+}
+a:active {
+  color: red;
+}
+#Search {
+  resize: none;
+  width: 500px;
+}
+.textC{
+    padding: 3%;
+}
+.CentredText {
+  text-align: center;
+  font-size: 2vh;
+}
