@@ -1,3 +1,12 @@
+function DropDown() {
+	var x = document.getElementById("myTopnav");
+	if (x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+
 function openPage(pageName, elmnt) {
 	var i, tabcontent, tablinks;
 	tabcontent = document.getElementsByClassName("tabcontent");
@@ -10,8 +19,8 @@ function openPage(pageName, elmnt) {
 		tablinks[i].style.color = "";
 	}
 	document.getElementById(pageName).style.display = "block";
-	elmnt.style.backgroundColor = "gainsboro";
-	elmnt.style.color = "black";
+	elmnt.style.backgroundColor = "#04aa6d";
+	elmnt.style.color = "white";
 }
 
 // Get the element with id="defaultOpen" and click on it
