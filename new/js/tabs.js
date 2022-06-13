@@ -23,7 +23,6 @@ function openPage(pageName, elmnt) {
 	elmnt.style.color = "white";
 }
 
-// Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 function clBtn(btn) {
 	document.getElementById(btn).click();

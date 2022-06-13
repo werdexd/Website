@@ -9,7 +9,8 @@ async function Fileloader(url, Filetype, Targetelmnt) {
 	if (Filetype == "md") {
 		var parsedmd = await marked.parse(data);
 		document.getElementById(Targetelmnt).innerHTML = parsedmd;
-	} else if (Filetype==="html"){
-		
+	} else{
+		document.getElementById(Targetelmnt).style.whiteSpace = "pre";
+		document.getElementById(Targetelmnt).innerHTML = "<code>"+data+"</code>"
 	}
 }
