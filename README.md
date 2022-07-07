@@ -11,6 +11,8 @@
 ### List of dependencies
 - [Marked](https://www.npmjs.com/package/marked)
 - [Prettier](https://www.npmjs.com/package/prettier)
+ 
+---
 
 
 

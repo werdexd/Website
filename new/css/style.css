@@ -88,10 +88,6 @@ a:not(.topnav):hover {
 a:not(.topnav):active {
 	color: red;
 }
-#Search {
-	resize: none;
-	width: 50vw;
-}
 .textC {
 	padding: 3%;
 }

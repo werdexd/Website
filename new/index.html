@@ -6,49 +6,33 @@
 		<link rel="stylesheet" href="/Website/new/css/style.css">
 		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 		<link rel="shortcut icon" href="/Website/favicon.ico" type="image/x-icon">
-		<title>NWv2.1</title>
+		<title>Homepage</title>
 
 		<script async="True" src="/Website/new/js/Fileloader.js"></script>
 		<script async="True" src="/Website/new/js/tabs.js"></script>
 		<script async="True" src="/Website/JS/General.js"></script>
 	</head>
 
-	<body>
+	<body onload="Fileloader('/Website/README.md', 'md','MD');Fileloader('/Website/new/js/Fileloader.js','js','test')">
 		<div class="topnav" id="myTopnav" ondragover="return none" onselect="return none">
-			<a class="tablink" id="defaultOpen" onclick="openPage('Home', this)">Home</a>
+			<a class="tablink" id="defaultOpen" onclick="openPage('Home', this);Fileloader('/Website/MD/index.md', 'md','Home')">Home</a>
 			<a class="tablink" onclick="openPage('mdCon', this);Fileloader('/Website/README.md', 'md','MD')">GitHub readme</a>
 			<a class="tablink" onclick="openPage('Links', this)">links</a>
 			<a class="tablink" onclick="openPage('About', this)">About</a>
 			<a class="tablink" onclick="openPage('CH', this);Fileloader('/Website/new/js/Fileloader.js','js','test')">Code highlights</a>
+
 			<a href="javascript:void(0);" class="icon" onclick="DropDown()">
 				<i class="fa fa-bars"></i>
 			</a>
 		</div>
-		<div id="Home" class="tabcontent">
-			<h1>Home</h1>
-			<p class="CentredText">
-				I' ve been working on a newer version that is more stable,
-				safer, faster and generally just better than the old one.
-				<br />Can somebody please teach me how design better webpages
-				<br /><br />
-				Your browser may tell you that this site uses cookies, but I can
-				assure you it is GitHub not me.
-			</p>
-			<dl>
-				<dt>Pages</dt>
-				<dd>
-					<a href="/Website/Tools/TUMN.html">Time until midnight</a><br />
-					This tool displays the time until midnight Based on the
-					users time settings
-				</dd>
-				<dd>You can find the about page on the navigation bar</dd>
-			</dl>
-			<div style="margin-top: 3em">
-				<h2>Quick google search:</h2>
-				<input type="text" id="Search" tabindex="1" />
-			</div>
-		</div>
 
+
+		<div id="Home" class="tabcontent">
+				<div id="Home">
+
+				</div>
+			</div>
+			
 		<div id="mdCon" class="tabcontent">
 			<hr>
 				<div id="MD"></div>
@@ -107,5 +91,4 @@
 				</div>
 			</div>
 	</body>
-
 </html>
