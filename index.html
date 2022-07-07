@@ -1,73 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<link
-			rel="icon"
-			href="/Website/Assets/Images/Website/Icons/favicon.ico"
-		/>
-		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/Website/css/style.css">
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<link rel="shortcut icon" href="/Website/favicon.ico" type="image/x-icon">
+		<title>Homepage</title>
+
+		<script async="True" src="/Website/js/Fileloader.js"></script>
+		<script async="True" src="/Website/js/tabs.js"></script>
 		<script async="True" src="/Website/JS/General.js"></script>
-		<link rel="stylesheet" href="/Website/CSS/General.css" />
-		<link rel="prefetch" href="https://www.google.com/search?q="/>
-		<title>Home</title>
 	</head>
-	<body id="BOdY">
-		<div id="Mainbox">
-			<h1 class="Title">Welcome to WerdeXD's website</h1>
-			<p class="Text">
-				I' ve been working on a newer version that is more stable,
-				safer, faster and generally just better than the old one.
-				<br />Can somebody please teach me how design better webpages
-				<br /><br />
-				Your browser may tell you that this site uses cookies, but I can
-				assure you it is GitHub not me.
-			</p>
+
+	<body onload="Fileloader('/Website/README.md', 'md','MD');Fileloader('/Website/js/Fileloader.js','js','test')">
+		<div class="topnav" id="myTopnav" ondragover="return none" onselect="return none">
+			<a class="tablink" id="defaultOpen" onclick="openPage('Home', this);Fileloader('/Website/MD/index.md', 'md','Home')">Home</a>
+			<a class="tablink" onclick="openPage('mdCon', this);Fileloader('/Website/README.md', 'md','MD')">GitHub readme</a>
+			<a class="tablink" onclick="openPage('Links', this)">links</a>
+			<a class="tablink" onclick="openPage('About', this)">About</a>
+			<a class="tablink" onclick="openPage('CH', this);Fileloader('/Website/js/Fileloader.js','js','test')">Code highlights</a>
+
+			<a href="javascript:void(0);" class="icon" onclick="DropDown()">
+				<i class="fa fa-bars"></i>
+			</a>
 		</div>
-		<nav>
-			<dl class="Links">
-				<dt>Social media and other accounts</dt>
-				<dd>
-					<a
-						target="_blank"
-						href="https://www.youtube.com/channel/UCxhxdYfAEFl9z3OyYXCBB-g"
-						>Youtube</a
-					>
-				</dd>
-				<dd>
-					<a target="_blank" href="https://twitter.com/WERDEXD_REAL"
-						>Twitter</a
-					>
-				</dd>
-				<dd>
-					<a target="_blank" href="https://www.instagram.com/werdexd/"
-						>Instagram</a
-					>
-				</dd>
-				<dd>
-					<a target="_blank" href="https://github.com/werdexd/"
-						>GitHub</a
-					>
-				</dd>
-				<dt>Pages</dt>
-				<dd>
-					<a href="/Website/new/">New homepage</a><br />
-					The brand new homepage
-				</dd>
-				<dd>
-					<a href="/Website/Tools/TUMN.html">Time until midnight</a
-					><br />
-					This tool displays the time until midnight Based on the
-					users time settings
-				</dd>
-				<dd
-					><a href="/Website/credit.html"
-						>Credits & Acknowledgments</a
-					></dd
-				>
-			</dl>
-		</nav>
-		<footer>
-			<div></div>
-		</footer>
+
+
+		<div id="Home" class="tabcontent">
+				<div id="Home">
+
+				</div>
+			</div>
+			
+		<div id="mdCon" class="tabcontent">
+			<hr>
+				<div id="MD"></div>
+			<hr>
+
+		</div>
+
+		<div id="Links" class="tabcontent">
+			<h1>Links</h1>
+			<nav>
+				<dl class="Links">
+					<dt>Social media and other accounts</dt>
+					<dd>
+						<a target="_blank" href="https://www.youtube.com/channel/UCxhxdYfAEFl9z3OyYXCBB-g">Youtube</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="https://twitter.com/WERDEXD_REAL">Twitter</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="https://www.instagram.com/werdexd/">Instagram</a>
+					</dd>
+					<dd>
+						<a target="_blank" href="https://github.com/werdexd/">GitHub</a>
+					</dd>
+			</nav>
+		</div>
+
+		<div id="About" class="tabcontent">
+			<h1>About</h1>
+			<div class="textC">
+				<dl>
+					<dt>WerdeXD</dt>
+					<dd>Only developer and designer</dd>
+					<dt>Bird*</dt>
+					<dd>Debugging, testing and ???</dd>
+					<p>
+						Some more refrences may be found in the
+						<a href="https://github.com/werdexd/Website#readme">readme</a>
+						file on Github
+					</p>
+				</dl>
+				<div style="margin-top: 3em">
+					<h4>
+						This website is a Github page.
+						<a href="https://github.com/werdexd/Website">Repository</a>
+					</h4>
+				</div>
+			</div>
+		</div>
+		<div id="CH" class="tabcontent">
+				<h1>Code highlights</h1>
+				<h3>Here i'll showcase some of the code </h3>
+				<hr>
+				<div id="test">
+
+				</div>
+			</div>
 	</body>
 </html>
