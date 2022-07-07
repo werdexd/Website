@@ -4,7 +4,6 @@
 
 ### Overview of the website (in work)
 
-> -   Quick online search with Google
 > -   Basic information about me
 
 

@@ -12,14 +12,21 @@
 		<script async="True" src="/Website/js/tabs.js"></script>
 		<script async="True" src="/Website/JS/General.js"></script>
 	</head>
+	<script>
+		function loadAll(){
+			Fileloader('/Website/README.md', 'md','MD');
+			Fileloader('/Website/js/Fileloader.js','js','test');
+			Fileloader('/Website/MD/index.md', 'md','Home');
 
-	<body onload="Fileloader('/Website/README.md', 'md','MD');Fileloader('/Website/js/Fileloader.js','js','test')">
-		<div class="topnav" id="myTopnav" ondragover="return none" onselect="return none">
-			<a class="tablink" id="defaultOpen" onclick="openPage('Home', this);Fileloader('/Website/MD/index.md', 'md','Home')">Home</a>
-			<a class="tablink" onclick="openPage('mdCon', this);Fileloader('/Website/README.md', 'md','MD')">GitHub readme</a>
+		}
+	</script>
+	<body onload="loadAll()">
+		<div class="topnav" id="myTopnav" ondragover="return none" onselect="return none" onclick="loadAll()">
+			<a class="tablink" id="defaultOpen" onclick="openPage('Home', this);">Home</a>
+			<a class="tablink" onclick="openPage('mdCon', this);">GitHub readme</a>
 			<a class="tablink" onclick="openPage('Links', this)">links</a>
 			<a class="tablink" onclick="openPage('About', this)">About</a>
-			<a class="tablink" onclick="openPage('CH', this);Fileloader('/Website/js/Fileloader.js','js','test')">Code highlights</a>
+			<a class="tablink" onclick="openPage('CH', this);">Code highlights</a>
 
 			<a href="javascript:void(0);" class="icon" onclick="DropDown()">
 				<i class="fa fa-bars"></i>
