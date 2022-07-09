@@ -2,10 +2,17 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="/Website/css/style.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="/Website/css/style.css" />
 		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-		<link rel="shortcut icon" href="/Website/favicon.ico" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="/Website/favicon.ico"
+			type="image/x-icon"
+		/>
 		<title>Homepage</title>
 
 		<script async="True" src="/Website/js/Fileloader.js"></script>
@@ -13,59 +20,51 @@
 		<script async="True" src="/Website/JS/General.js"></script>
 	</head>
 	<script>
-		function loadAll(){
-			Fileloader('/Website/README.md', 'md','MD');
-			Fileloader('/Website/js/Fileloader.js','js','test');
-			Fileloader('/Website/MD/index.md', 'md','Home');
-
+		function loadAll() {
+			Fileloader("/Website/README.md", "md", "GH-README");
+			Fileloader("/Website/js/Fileloader.js", "js", "code");
+			Fileloader("/Website/MD/index.md", "md", "Home");
+			Fileloader("/Website/MD/Sm.md", "md", "Links");
 		}
 	</script>
 	<body onload="loadAll()">
-		<div class="topnav" id="myTopnav" ondragover="return none" onselect="return none" onclick="loadAll()">
-			<a class="tablink" id="defaultOpen" onclick="openPage('Home', this);">Home</a>
-			<a class="tablink" onclick="openPage('mdCon', this);">GitHub readme</a>
+		<div
+			class="topnav"
+			id="myTopnav"
+			ondragover="return none"
+			onselect="return none"
+			onclick="loadAll()"
+		>
+			<a
+				class="tablink"
+				id="defaultOpen"
+				onclick="openPage('Home', this);"
+				>Home</a
+			>
+			<a class="tablink" onclick="openPage('GH-README', this);"
+				>GitHub readme</a
+			>
 			<a class="tablink" onclick="openPage('Links', this)">links</a>
 			<a class="tablink" onclick="openPage('About', this)">About</a>
-			<a class="tablink" onclick="openPage('CH', this);">Code highlights</a>
+			<a class="tablink" onclick="openPage('CH', this);"
+				>Code highlights</a
+			>
 
 			<a href="javascript:void(0);" class="icon" onclick="DropDown()">
 				<i class="fa fa-bars"></i>
 			</a>
 		</div>
-
-
+		<noscript>
+			THIS WEBSITE RELIES ON JAVASCRIPT. PLEASE ENABLE IT.
+			<a href="https://www.google.com/search?q=how+to+enable+javascript">CLICK HERE</a>
+		</noscript>
 		<div id="Home" class="tabcontent">
-				<div id="Home">
-
-				</div>
-			</div>
-			
-		<div id="mdCon" class="tabcontent">
-			<hr>
-				<div id="MD"></div>
-			<hr>
-
 		</div>
 
-		<div id="Links" class="tabcontent">
-			<h1>Links</h1>
-			<nav>
-				<dl class="Links">
-					<dt>Social media and other accounts</dt>
-					<dd>
-						<a target="_blank" href="https://www.youtube.com/channel/UCxhxdYfAEFl9z3OyYXCBB-g">Youtube</a>
-					</dd>
-					<dd>
-						<a target="_blank" href="https://twitter.com/WERDEXD_REAL">Twitter</a>
-					</dd>
-					<dd>
-						<a target="_blank" href="https://www.instagram.com/werdexd/">Instagram</a>
-					</dd>
-					<dd>
-						<a target="_blank" href="https://github.com/werdexd/">GitHub</a>
-					</dd>
-			</nav>
+		<div id="GH-README" class="tabcontent">
 		</div>
+
+		<div id="Links" class="tabcontent"> </div>
 
 		<div id="About" class="tabcontent">
 			<h1>About</h1>
@@ -77,25 +76,27 @@
 					<dd>Debugging, testing and ???</dd>
 					<p>
 						Some more refrences may be found in the
-						<a href="https://github.com/werdexd/Website#readme">readme</a>
+						<a href="https://github.com/werdexd/Website#readme"
+							>readme</a
+						>
 						file on Github
 					</p>
 				</dl>
 				<div style="margin-top: 3em">
 					<h4>
 						This website is a Github page.
-						<a href="https://github.com/werdexd/Website">Repository</a>
+						<a href="https://github.com/werdexd/Website"
+							>Repository</a
+						>
 					</h4>
 				</div>
 			</div>
 		</div>
 		<div id="CH" class="tabcontent">
-				<h1>Code highlights</h1>
-				<h3>Here i'll showcase some of the code </h3>
-				<hr>
-				<div id="test">
-
-				</div>
-			</div>
+			<h1>Code highlights</h1>
+			<h3>Here i'll showcase some of the code </h3>
+			<hr />
+			<div id="code"> </div>
+		</div>
 	</body>
 </html>
