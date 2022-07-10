@@ -6,13 +6,11 @@
 
 > -   Basic information about me
 
-
 ### List of dependencies
-- [Marked](https://www.npmjs.com/package/marked)
-- [Prettier](https://www.npmjs.com/package/prettier)
- 
+
+-   [Marked](https://www.npmjs.com/package/marked)
+-   [Prettier](https://www.npmjs.com/package/prettier)
+
 ---
-
-
 
 **This Website was made by a beginner**
