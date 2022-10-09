@@ -17,6 +17,4 @@ Your browser may tell you that this site uses cookies, but I can assure you it i
 
 <br><br>
 
-![](https://cdn.discordapp.com/attachments/971453102626582558/1027972816911474838/41tKs-D6aL.jpg)
-
 ## [Github repository](https://github.com/werdexd/Website)
