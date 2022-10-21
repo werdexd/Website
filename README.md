@@ -13,4 +13,6 @@
 
 ---
 
+If somebody wants to contribute: contact me through the details on my profile.
+
 **This Website was made by a beginner**
