@@ -19,3 +19,6 @@ Fileloader= async function(url, Filetype, Targetelmnt) {
 		document.getElementById(Targetelmnt).innerHTML = data;
 	}
 }
+export function EXFileloader(url, Filetype, Targetelmnt){
+	Fileloader(url, Filetype, Targetelmnt)
+}
