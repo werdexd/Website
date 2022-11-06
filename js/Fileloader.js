@@ -1,5 +1,5 @@
 CodeLangs = ["js", "html", "py"];
-async function Fileloader(url, Filetype, Targetelmnt) {
+Fileloader= async function(url, Filetype, Targetelmnt) {
 	const response = await fetch(url, {
 		headers: {
 			"Cache-Control": "no-cache",
